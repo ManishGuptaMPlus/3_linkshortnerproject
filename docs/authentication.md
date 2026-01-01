@@ -22,7 +22,7 @@ This application uses **Clerk** exclusively for all authentication and user mana
 ### Dashboard Route
 - Path: `/dashboard`
 - **MUST** require authentication
-- Redirect unauthenticated users to sign-in
+- Redirect unauthenticated users to home page
 
 ### Home Page Redirect
 - Path: `/`
