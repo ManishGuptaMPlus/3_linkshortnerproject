@@ -1,5 +1,5 @@
 import { db } from "@/db";
-import { links } from "@/db/schema";
+import { links, type NewLink } from "@/db/schema";
 import { eq } from "drizzle-orm";
 
 /**
@@ -12,4 +12,14 @@ export async function getUserLinks(userId: string) {
     .select()
     .from(links)
     .where(eq(links.userId, userId));
+}
+
+/**
+ * Inserts a new link into the database
+ * @param data - The link data to insert
+ * @returns The newly created link
+ */
+export async function insertLink(data: NewLink) {
+  const [newLink] = await db.insert(links).values(data).returning();
+  return newLink;
 }
