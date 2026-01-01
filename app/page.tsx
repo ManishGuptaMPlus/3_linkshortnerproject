@@ -23,9 +23,6 @@ export default function Home() {
                 Get Started Free
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto">
-              Learn More
-            </Button>
           </div>
         </div>
       </section>
