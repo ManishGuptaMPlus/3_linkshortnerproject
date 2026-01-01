@@ -1,0 +1,5 @@
+I used below prompts in this projects.
+
+
+## For generating data-mutation related copilot instructions
+- /create-copilot-instructions ALL data mutations in this app should be done via server actions. Server actions must be called from client components. Server action files MUST be named actions.ts and be colocated in the directory of the component that calls the server action. All data passed to server action must have appropriate typescripts types (DO NOT USE use the Form data typescript type). All data must be validated in server action via ZOD. All server action must check for logges in user before continuing with database operations. Database operations must be done via helper functions that wrap dirzzle queries. These helper functions located in the /data directory and server actions should not direclty used drizzle queries within them. 
