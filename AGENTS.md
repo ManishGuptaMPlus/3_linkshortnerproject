@@ -32,6 +32,7 @@ Consult these files based on the task at hand:
 
 - **🔐 [Authentication Guidelines](docs/authentication.md)** - **MUST READ** before implementing any authentication, route protection, user data access, or auth-related features
 - **🎨 [UI Components Guidelines](docs/ui-components.md)** - **MUST READ** before creating or installing any UI components, forms, buttons, or styled elements
+- **🗄️ [Database Schema Guidelines](docs/database-schema.md)** - **MUST READ** before creating or modifying database schemas, tables, migrations, or data models
 
 **Workflow:**
 
