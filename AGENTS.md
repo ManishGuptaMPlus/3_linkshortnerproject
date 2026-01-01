@@ -1,5 +1,15 @@
 # Agent Instructions for Link Shortener Project
 
+## ⚠️ Important: Do NOT Use `middleware.ts`
+
+**As of Next.js 16.x (the version used in this project), `middleware.ts` is deprecated and should NOT be used for any new features or route protection.**
+
+- Do **NOT** create or edit a `middleware.ts` file in this project.
+- Instead, use the provided `proxy.ts` for any proxying, route handling, or edge logic.
+- This ensures compatibility with the latest Next.js conventions and avoids deprecated patterns.
+
+Always check for updates in the Next.js documentation and follow the project's established patterns.
+
 This document provides comprehensive guidelines for AI agents and LLMs working on this project. These instructions ensure consistency, quality, and adherence to project standards.
 
 ## Table of Contents
