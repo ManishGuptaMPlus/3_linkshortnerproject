@@ -15,6 +15,8 @@ This is a **Link Shortener** application built with Next.js 16, featuring:
 
 All agent instructions are organized in the `/docs` directory:
 
+- **[Authentication Guidelines](docs/authentication.md)** - Clerk authentication, protected routes, and modal-based sign-in/sign-up
+
 ALWAYS refer to the relevant .md file BEFORE generating any code.
 
 
