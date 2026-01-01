@@ -1,6 +1,6 @@
 import { db } from "@/db";
 import { links, type NewLink } from "@/db/schema";
-import { eq } from "drizzle-orm";
+import { eq, desc } from "drizzle-orm";
 
 /**
  * Fetches all links for a specific user
@@ -8,10 +8,12 @@ import { eq } from "drizzle-orm";
  * @returns Array of links belonging to the user
  */
 export async function getUserLinks(userId: string) {
+  // Return links ordered by updatedAt descending (latest first)
   return await db
     .select()
     .from(links)
-    .where(eq(links.userId, userId));
+    .where(eq(links.userId, userId))
+    .orderBy(desc(links.updatedAt));
 }
 
 /**
