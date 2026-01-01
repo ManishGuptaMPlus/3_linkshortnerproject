@@ -10,3 +10,7 @@ Implement the create link functionality. this should be launched via a modal/dia
 
 ## Feature implementation prompts: to edit and delete links from link list item
 implement the edit and delete link functionality for each link list item. The edit link should be done via a modal/dialog and teh delete link should first launch a dialog to the user whether they want to delete this link or not. #file:page.tsx file.
+
+## Feature implementation prompts: to implement redirect functionality
+implement the redirect functionality for each link via an api route handler. Whenever the route handler at /l/[shortcode] is accessed, it should redirect the user to the full url.
+ 

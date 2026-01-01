@@ -70,3 +70,16 @@ export async function deleteLinkById(id: number, userId: string): Promise<boolea
   await db.delete(links).where(and(eq(links.id, id), eq(links.userId, userId)));
   return true;
 }
+
+/**
+ * Fetches a link by its short code
+ * @param shortCode - The short code to look up
+ * @returns The link if found, null otherwise
+ */
+export async function getLinkByShortCode(shortCode: string) {
+  const [link] = await db
+    .select()
+    .from(links)
+    .where(eq(links.shortCode, shortCode));
+  return link || null;
+}
