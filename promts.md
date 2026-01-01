@@ -6,3 +6,7 @@ I used below prompts in this projects.
 
 ## Feature implementation prompts: to create new links from dashbaord page
 Implement the create link functionality. this should be launched via a modal/dialog from the dashboard #file:page.tsx page.
+
+
+## Feature implementation prompts: to edit and delete links from link list item
+implement the edit and delete link functionality for each link list item. The edit link should be done via a modal/dialog and teh delete link should first launch a dialog to the user whether they want to delete this link or not. #file:page.tsx file.

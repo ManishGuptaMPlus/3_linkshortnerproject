@@ -3,6 +3,8 @@ import { redirect } from "next/navigation";
 import { getUserLinks } from "@/data/links";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CreateLinkDialog } from "@/components/create-link-dialog";
+import { EditLinkDialog } from "@/components/edit-link-dialog";
+import { DeleteLinkDialog } from "@/components/delete-link-dialog";
 
 export default async function DashboardPage() {
   const { userId } = await auth();
@@ -43,12 +45,20 @@ export default async function DashboardPage() {
             {userLinks.map((link) => (
               <Card key={link.id}>
                 <CardHeader>
-                  <CardTitle className="text-lg font-medium break-all">
-                    {link.shortCode}
-                  </CardTitle>
-                  <CardDescription className="break-all">
-                    {link.url}
-                  </CardDescription>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <CardTitle className="text-lg font-medium break-all">
+                        {link.shortCode}
+                      </CardTitle>
+                      <CardDescription className="break-all">
+                        {link.url}
+                      </CardDescription>
+                    </div>
+                    <div className="flex gap-2">
+                      <EditLinkDialog link={{ id: Number(link.id), url: link.url, shortCode: link.shortCode }} />
+                      <DeleteLinkDialog link={{ id: Number(link.id), url: link.url, shortCode: link.shortCode }} />
+                    </div>
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-col gap-2 text-sm text-muted-foreground">
