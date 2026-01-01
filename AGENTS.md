@@ -11,6 +11,12 @@ This is a **Link Shortener** application built with Next.js 16, featuring:
 - Tailwind CSS with shadcn/ui components
 - TypeScript for type safety
 
+## ⚠️ CRITICAL: Read Before Coding
+
+**🚨 ALWAYS read the relevant instruction file from `/docs` directory BEFORE generating ANY code! 🚨**
+
+Do NOT skip this step. The documentation contains essential patterns, standards, and implementation details that must be followed.
+
 ## 📚 Detailed Agent Instructions
 
 All agent instructions are organized in the `/docs` directory:
@@ -18,7 +24,9 @@ All agent instructions are organized in the `/docs` directory:
 - **[Authentication Guidelines](docs/authentication.md)** - Clerk authentication, protected routes, and modal-based sign-in/sign-up
 - **[UI Components Guidelines](docs/ui-components.md)** - shadcn/ui usage, component patterns, and styling standards
 
-ALWAYS refer to the relevant .md file BEFORE generating any code.
+> **⚠️ MANDATORY REQUIREMENT:**  
+> **ALWAYS read and consult the relevant .md file from the list above BEFORE generating any code.**  
+> Failure to do so will result in inconsistent implementations that don't follow project standards.
 
 
 ## 🎯 Quick Reference
@@ -43,11 +51,12 @@ npx drizzle-kit studio # Open Drizzle Studio
 
 ## 🚀 Getting Started as an Agent
 
-1. **Read the tech stack documentation** to understand the technologies
-2. **Review coding standards** before making any code changes
-3. **Check project structure** to understand where files should be placed
-4. **Consult feature-specific guides** when working on database or UI components
-5. **Always maintain consistency** with existing code patterns
+1. **🚨 FIRST: Read the relevant `/docs/*.md` file** - This is MANDATORY before writing any code
+2. **Read the tech stack documentation** to understand the technologies
+3. **Review coding standards** before making any code changes
+4. **Check project structure** to understand where files should be placed
+5. **Consult feature-specific guides** when working on database or UI components
+6. **Always maintain consistency** with existing code patterns
 
 ## ⚠️ Important Notes
 
